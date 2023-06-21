@@ -392,7 +392,6 @@ public class JavaRefactoringTest extends TestCase {
         String actualValue = element.getText();
 
         assertEquals(getImplFile(implFile).getName(), element.getFile().getName());
-//        assertTrue(actualValue.contains(expectedValue));
         assertThat(actualValue, Matchers.containsString(expectedValue));
         assertFalse(actualValue.contains("A step with comments"));
     }
